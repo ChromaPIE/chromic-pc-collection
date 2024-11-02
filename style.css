@@ -1,8 +1,8 @@
-/* import Manrope-Bold.ttf */
+/* import fusion-pixel.ttf */
 
 @font-face {
-  font-family: 'Manrope Bold';
-  src: url('Manrope-Bold.ttf') format('truetype');
+  font-family: 'Fusion Pixel 12px Proportional zh_hans Regular';
+  src: url('fusion-pixel.ttf') format('truetype');
 }
 
 * {
@@ -10,7 +10,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: 'Manrope Bold';
+  font-family: 'Fusion Pixel 12px Proportional zh_hans Regular';
   text-shadow: #000 2px 2px 2px;
 }
 
