@@ -5,7 +5,7 @@ function formatDate(dateString) {
   
   function updateLastCommitDate() {
     const username = 'ChromaPIE';
-    const repo = 'chromic-pc-collection ';
+    const repo = 'chromic-pc-collection';
     const branch = 'overlord';
   
     fetch(`https://api.github.com/repos/${username}/${repo}/branches/${branch}`)
