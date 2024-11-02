@@ -1,23 +1,43 @@
-function newInvCard(name, group, era, code, rarity, nfs) {
+function newInvCard(name, group, era, code, rarity, traderate) {
   const fileName = code.split('.')[0];
+  
+  let tradeText;
+  switch(traderate) {
+    case 0:
+      tradeText = "{C:red}NFS";
+      break;
+    case 1:
+      tradeText = "{C:orange}Good Offers Only";
+      break;
+    case 2:
+      tradeText = "{C:green}UFS & UFT";
+      break;
+    case 3:
+      tradeText = "{C:green}At Marketplace";
+      break;
+    default:
+      tradeText = "";
+  }
+
   return {
-      name: name,
-      text: [
-          `{C:orange}Group: {}${group}`,
-          `{C:purple}Era: {}${era}`,
-          `{C:grey}Code: {}${code}`,
-          "",
-          nfs ? "{C:red}NFS" : ""
-      ].filter(Boolean),
-      image_url: `img/${fileName}.gif`,
-      rarity: rarity
+    name: name,
+    text: [
+      `{C:orange}Group: {}${group}`,
+      `{C:purple}Era: {}${era}`,
+      `{C:grey}Code: {}${code}`,
+      "",
+      tradeText
+    ].filter(Boolean),
+    image_url: `img/${fileName}.gif`,
+    rarity: rarity
   };
 }
 
 let inventory = [
-  newInvCard("COCONA", "XG", "Tippy Toes", "XTO1.8c15", "💎"),
-  newInvCard("JURIA", "XG", "Tippy Toes", "XTJ1.a998", "💎"),
-  newInvCard("HARVEY", "XG", "Tippy Toes", "XTH1.c125", "💎"),
+  newInvCard("COCONA", "XG", "Tippy Toes", "XTO1.8c15", "💎", 0),
+  newInvCard("JURIA", "XG", "Tippy Toes", "XTJ1.a998", "💎", 0),
+  newInvCard("HARVEY", "XG", "Tippy Toes", "XTH1.c125", "💎", 0),
+  newInvCard("CHISA", "XG", "Mascara", "XMCH1.9b2b", "💎", 0),
 ];
 
 // Deprecated
