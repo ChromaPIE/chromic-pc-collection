@@ -89,8 +89,9 @@
     <p>
       Here you can browse my Photocard Inventory. <br>
       Might not be up-to-date. <br>
-      Last updated: {{ site.time | date: "%Y-%m-%d %H:%M:%S %Z" }}
+      Last updated: <span id="last-updated">Loading...</span>
     </p>
+    <script src="fetchtime.js"></script>
     <br>
     <h2>View Source</h2>
     <br>
