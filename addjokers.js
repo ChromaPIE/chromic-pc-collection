@@ -34,6 +34,7 @@ function newInvCard(name, group, era, code, rarity, traderate) {
 }
 
 let inventory = [
+  newInvCard("COCONA", "XG", "New DNA", "XNCN3.b9cd", "💎💎💎", 0),
   newInvCard("COCONA", "XG", "Tippy Toes", "XTO1.8c15", "💎", 0),
   newInvCard("JURIA", "XG", "Tippy Toes", "XTJ1.a998", "💎", 0),
   newInvCard("HARVEY", "XG", "Tippy Toes", "XTH1.c125", "💎", 0),

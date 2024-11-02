@@ -30,7 +30,7 @@ main {
   text-align: center;
   color: white;
   padding: 1rem;
-  width: min(60rem, 100%);
+  width: min(120rem, 90%);
   margin: 1rem auto;
   font-size: 1.5rem;
 }
@@ -58,11 +58,10 @@ h1 {
   border-radius: 1rem;
   width: 15rem;
 
-  background-color: #374244;
+  background-color: #3742446f;
 }
 .joker img {
   height: 190px;
-  image-rendering: pixelated;
 }
 img.hasback {
   background-image: url("img/sticker_bg.png");
@@ -82,16 +81,17 @@ img.hasback {
 
 #source {
   background-color: #374244;
-  color: white;
+  color: coral;
   padding: 1rem;
   border: 2px solid white;
   border-radius: 1rem;
   cursor: pointer;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .rarity {
-  width: 142px;
+  width: 71px;
   border-radius: 8px;
   padding: 8px;
 }
