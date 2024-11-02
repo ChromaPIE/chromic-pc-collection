@@ -109,22 +109,18 @@ let blinds = [
   // },
 ]
 
-let shop_items = [
+let inventory = [
   {
-    name: "Joker",
+    name: "COCONA",
     text: [
-      "{C:mult}+4{} Mult"
+      "{C:orange}Group: {}XG",
+      "{C:purple}Era: {}Tippy Toes",
+      "{C:grey}Code: {}XTO1.8c15",
+      "",
+      "{C:red}NFS"
     ],
-    image_url: "img/j_joker.png",
-    rarity: "Voucher"
-  },
-  {
-    name: "Joker",
-    text: [
-      "{C:mult}+4{} Mult"
-    ],
-    image_url: "img/j_joker.png",
-    rarity: "Pack"
+    image_url: "img/XTO1.gif",
+    rarity: "💎"
   },
 ]
 
@@ -172,9 +168,9 @@ let cols = {
 }
 
 let rarities = {
-  "Common": "#009dff", 
-  "Uncommon": "#4BC292",
-  "Rare": "#fe5f55",
+  "💎": "#009dff", 
+  "💎💎": "#4BC292",
+  "💎💎💎": "#fe5f55",
   "Legendary": "#b26cbb",
   "Joker": "#708b91",
   "Tarot": "#a782d1",
@@ -292,9 +288,9 @@ if (blinds.length === 0) {
   add_cards_to_div(blinds, blinds_div);
 }
 
-if (shop_items.length === 0) {
-  document.querySelector(".shopitemsfull").style.display = "none"
+if (inventory.length === 0) {
+  document.querySelector(".inventoryfull").style.display = "none"
 } else {
-  let shopitems_div = document.querySelector(".shopitems");
-  add_cards_to_div(shop_items, shopitems_div);
+  let inventory_div = document.querySelector(".inventory");
+  add_cards_to_div(inventory, inventory_div);
 }
