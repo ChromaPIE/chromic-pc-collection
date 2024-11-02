@@ -1,128 +1,31 @@
-let jokers = [
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/j_joker.png",
-  //   rarity: "Common"
-  // }
-]
-
-// works the same. 
-let consumables = [
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/j_joker.png",
-  //   rarity: "Tarot"
-  // },
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/j_joker.png",
-  //   rarity: "Planet"
-  // },
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/j_joker.png",
-  //   rarity: "Spectral"
-  // },
-]
-
-let card_modifications = [
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/j_joker.png",
-  //   rarity: "Enhancement"
-  // },
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/j_joker.png",
-  //   rarity: "Edition"
-  // },
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/sticker_example.png",
-  //   rarity: "Seal"
-  // },
-]
-
-let decks = [
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/j_joker.png",
-  //   rarity: "Deck"
-  // },
-]
-
-let stickers = [
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/sticker_example.png",
-  //   rarity: "Sticker"
-  // },
-]
-
-let blinds = [
-  // {
-  //   name: "The Wall",
-  //   text: [
-  //     "Extra large blind",
-  //     "{C:inactive}({C:red}4x{C:inactive} Base for {C:attention}$$$$${C:inactive})",
-  //     "{C:inactive}(Appears from Ante 2)"
-  //   ],
-  //   image_url: "img/the_wall.png",
-  //   rarity: "Boss Blind"
-  // },
-  // {
-  //   name: "Violet Vessel",
-  //   text: [
-  //     "Very large blind",
-  //     "{C:inactive}({C:red}6x{C:inactive} Base for {C:attention}$$$$$$$${C:inactive})",
-  //     "{C:inactive}(Appears from Ante 8)"
-  //   ],
-  //   image_url: "img/violet_vessel.png",
-  //   rarity: "Showdown"
-  // },
-]
+function newInvCard(name, group, era, code, rarity, nfs) {
+  const fileName = code.split('.')[0];
+  return {
+      name: name,
+      text: [
+          `{C:orange}Group: {}${group}`,
+          `{C:purple}Era: {}${era}`,
+          `{C:grey}Code: {}${code}`,
+          "",
+          nfs ? "{C:red}NFS" : ""
+      ].filter(Boolean),
+      image_url: `img/${fileName}.gif`,
+      rarity: rarity
+  };
+}
 
 let inventory = [
-  {
-    name: "COCONA",
-    text: [
-      "{C:orange}Group: {}XG",
-      "{C:purple}Era: {}Tippy Toes",
-      "{C:grey}Code: {}XTO1.8c15",
-      "",
-      "{C:red}NFS"
-    ],
-    image_url: "img/XTO1.gif",
-    rarity: "💎"
-  },
-]
+  newInvCard("COCONA", "XG", "Tippy Toes", "XTO1.8c15", "💎"),
+  newInvCard("JURIA", "XG", "Tippy Toes", "XTJ1.a998", "💎"),
+];
+
+// Deprecated
+let jokers = []
+let consumables = []
+let card_modifications = []
+let decks = []
+let stickers = []
+let blinds = []
 
 let cols = {
   
@@ -168,7 +71,7 @@ let cols = {
 }
 
 let rarities = {
-  "💎": "#009dff", 
+  "💎": "#66c4ff", 
   "💎💎": "#4BC292",
   "💎💎💎": "#fe5f55",
   "Legendary": "#b26cbb",

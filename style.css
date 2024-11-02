@@ -80,7 +80,7 @@ img.hasback {
   animation-timing-function: steps(20, start);
 }
 
-#download {
+#source {
   background-color: #374244;
   color: white;
   padding: 1rem;
