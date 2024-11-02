@@ -17,6 +17,7 @@ function newInvCard(name, group, era, code, rarity, nfs) {
 let inventory = [
   newInvCard("COCONA", "XG", "Tippy Toes", "XTO1.8c15", "💎"),
   newInvCard("JURIA", "XG", "Tippy Toes", "XTJ1.a998", "💎"),
+  newInvCard("HARVEY", "XG", "Tippy Toes", "XTH1.c125", "💎"),
 ];
 
 // Deprecated
@@ -94,7 +95,7 @@ regex = /{([^}]+)}/g;
 
 let add_cards_to_div = (jokers, jokers_div) => {
   for (let joker of jokers) {
-    console.log("adding joker", joker.name);
+    console.log("adding photocard", joker.name);
   
     joker.text = joker.text.map((line) => { return line + "{}"});
   
