@@ -85,11 +85,29 @@
   <div class="bg">
   </div>
   <main>
-    <h1>ChromaPIE's Collection</h1>
+    <h1 id="floating-title">
+      <span>C</span><span>h</span><span>r</span><span>o</span><span>m</span><span>a</span><span>P</span><span>I</span><span>E</span><span>'</span><span>s</span>
+      <span>C</span><span>o</span><span>l</span><span>l</span><span>e</span><span>c</span><span>t</span><span>i</span><span>o</span><span>n</span>
+    </h1>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const title = document.getElementById('floating-title');
+        const chars = title.getElementsByTagName('span');
+
+        for (let i = 0; i < chars.length; i++) {
+          chars[i].style.animationDelay = (i * 0.1) + 's';
+        }
+      });
+    </script>
     <p>
       Here you can browse my Photocard Inventory. <br>
       Might not be up-to-date. <br>
       Last updated: <span id="last-updated">Loading...</span>
+    </p>
+    <p>
+      <br>
+      <span style="color: #FDA200;">Good Offers</span> means ~25% above <span style="color: #4BC292;">/sell auto</span> price, <br>
+      or XG cards of the same rarity.
     </p>
     <script src="fetchtime.js"></script>
     <br>

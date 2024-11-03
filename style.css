@@ -52,6 +52,21 @@ h5 {
   color: #B5BDC7;
 }
 
+#floating-title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#floating-title span {
+  display: inline-block;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
 .cards {
   display: flex;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));

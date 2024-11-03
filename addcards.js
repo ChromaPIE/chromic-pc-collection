@@ -25,7 +25,7 @@ function newInvCard(name, group, era, number, code, rarity, traderate, event=fal
       tradeText = "{C:green}UFS & UFT";
       break;
     case 3:
-      tradeText = "{C:green}At Marketplace";
+      tradeText = "{C:pale_green}At Marketplace";
       break;
     default:
       tradeText = "";
@@ -105,7 +105,7 @@ let cols = {
   L_BLACK: "#4f6367",
   GREY: "#5f7377",
   CHANCE: "#4BC292",
-  photocard_GREY: "#bfc7d5",
+  PHOTOCARD_GREY: "#bfc7d5",
   VOUCHER: "#cb724c",
   BOOSTER: "#646eb7",
   EDITION: "#ffffff",
@@ -117,7 +117,7 @@ let cols = {
   SPADES: "#403995",
   CLUBS: "#235955",
   ENHANCED: "#8389DD",
-  photocard: "#708b91",
+  PHOTOCARD: "#708b91",
   TAROT: "#a782d1",
   PLANET: "#13afce",
   SPECTRAL: "#4584fa",
