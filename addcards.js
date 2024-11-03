@@ -72,6 +72,14 @@ let inventory = [
   newInvCard("Yuri & Chuu", "Solo x Solo", "Frosty Friends", 448, "YCF.2870", 2, 3, true),
   newInvCard("Daso & Nana", "SIS x OC", "Frosty Friends", 448, "DANF.9d0a", 2, 2, true),
   newInvCard("Harvey", "XG", "WOKE UP", 456, "XUA2.1580", 2, 0),
+  newInvCard("You & Byul", "SIS x MMMOO", "Frosty Friends", 458, "YBF.023d", 2, 2, true),
+  newInvCard("San & Dae", "ASTRO x AB6IX", "Frosty Friends", 458, "SDF.5041", 2, 3, true),
+  newInvCard("Yena & Min", "IZ* X Speed", "Frosty Friends", 460, "EMF.5ecd", 2, 3, true),
+  newInvCard("Jihan & Seeun", "Wkly x STAYC", "Frosty Friends", 465, "JSF.1b8e", 2, 3, true),
+  newInvCard("Juria", "XG", "Tippy Toes", 465, "XTJ1.ed78", 1, 0),
+  newInvCard("Hiyyih & J", "Kep1 x STAYC", "Frosty Friends", 466, "IJF.a171", 2, 1, true),
+  newInvCard("Nay & Jenn", "TW x BP", "Frosty Friends", 467, "NJF.4ac6", 2, 1, true),
+  newInvCard("Harvey", "XG", "Tippy Toes", 479, "XTH2.3627", 2, 0),
 ];
 
 // Deprecated
