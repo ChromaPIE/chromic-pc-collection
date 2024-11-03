@@ -59,7 +59,9 @@ let inventory = [
   newInvCard("takeru", "INI", "THE VIEW", 90, "ITWK2.2d66", 2, 3),
   newInvCard("ruka", "BABYMONSTER", "DRIP", 108, "BDRU1.0369", 1, 2),
   newInvCard("Taemin", "SHINEE", "Coquette", 172, "STCT.5615", 2, 2, true),
+  newInvCard("Hyungwon", "MONSTA X", "No Limit", 174, "MNY1.f451", 1, 2),
   newInvCard("Juria", "XG", "SOMETHING AIN'T RIGHT", 180, "XSU2.2da0", 2, 0),
+  newInvCard("Asa", "BABYMONSTER", "DRIP", 181, "BDAS1.cae9", 1, 2),
   newInvCard("Hinata", "XG", "SOMETHING AIN'T RIGHT", 210, "XSI2.b236", 2, 0),
   newInvCard("The8", "SEVENTEEN", "Coquette", 274, "SECT.ef52", 2, 1, true),
   newInvCard("Hinata", "XG", "WINTER WITHOUT YOU", 327, "XWHI2.0655", 2, 0),
@@ -67,7 +69,9 @@ let inventory = [
   newInvCard("Jurin", "XG", "SHOOTING STAR", 368, "XJR2.a67e", 2, 0),
   newInvCard("Harvey", "XG", "SHOOTING STAR", 421, "XHV2.cb79", 2, 0),
   newInvCard("Sinb & Bin", "GF x ASTRO", "Frosty Friends", 447, "SBBF.41ab", 2, 2, true),
+  newInvCard("Yuri & Chuu", "Solo x Solo", "Frosty Friends", 448, "YCF.2870", 2, 3, true),
   newInvCard("Daso & Nana", "SIS x OC", "Frosty Friends", 448, "DANF.9d0a", 2, 2, true),
+  newInvCard("Harvey", "XG", "WOKE UP", 456, "XUA2.1580", 2, 0),
 ];
 
 // Deprecated
