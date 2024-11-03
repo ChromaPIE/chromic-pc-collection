@@ -53,10 +53,16 @@ function newInvCard(name, group, era, number, code, rarity, traderate, event=fal
 
 let inventory = [
 //newInvCard("NAME", "GROUP", "ERA(EVENT)", "NUMBER", "CODE", "RARITY", TRADERATE, [EVENT]),
-  newInvCard("WOONGMIN", "AB6IX", "Ships", 6, "AWMS.17b7", 2, 3, true),
-  newInvCard("COCONA", "XG", "NEW DNA", 50, "XNCN3.b9cd", 3, 0),
-  newInvCard("IRENE", "Irene & Seulgi", "Monster", 56, "ISI3.0a0a", 3, 1),
-  newInvCard("DAEYEOL", "GOLDEN CHILD", "Pump It Up", 90, "GCPD1.48a1", 1, 3),
+  newInvCard("woongmin", "AB6IX", "Ships", 6, "AWMS.17b7", 2, 3, true),
+  newInvCard("cocona", "XG", "NEW DNA", 50, "XNCN3.b9cd", 3, 0),
+  newInvCard("irene", "Irene & Seulgi", "Monster", 56, "ISI3.0a0a", 3, 1),
+  newInvCard("takeru", "INI", "THE VIEW", 90, "ITWK2.2d66", 2, 3),
+  newInvCard("Seongjong", "INFINITE", "13egin", 102, "IEJ1.4288", 1, 3),
+  newInvCard("ruka", "BABYMONSTER", "DRIP", 108, "BDRU1.0369", 1, 2),
+  newInvCard("Taemin", "SHINEE", "Coquette", 172, "STCT.5615", 2, 2, true),
+  newInvCard("Juria", "XG", "SOMETHING AIN'T RIGHT", 180, "XSU2.2da0", 2, 0),
+  newInvCard("Hinata", "XG", "SOMETHING AIN'T RIGHT", 210, "XSI2.b236", 2, 0),
+  newInvCard("The8", "SEVENTEEN", "Coquette", 274, "SECT.ef52", 2, 1, true),
 ];
 
 // Deprecated
@@ -161,7 +167,7 @@ let add_cards_to_div = (photocards, photocards_div) => {
     photocard_div.classList.add("photocard");
     if (photocard.rarity === "Sticker" || photocard.rarity == "Seal") {
       photocard_div.innerHTML = `
-        <h3>${photocard.name}</h3>
+        <h3>${photocard.name.toUpperCase()}</h3>
         <h5>#${photocard.number} | ${photocard.code}</h5>
         <img src="${photocard.image_url}" alt="${photocard.name}" class="hasback" />
         <h4 class="rarity" style="background-color: ${rarities[photocard.rarity]}">${photocard.rarity}</h4>
@@ -169,7 +175,7 @@ let add_cards_to_div = (photocards, photocards_div) => {
       `;
     } else if (photocard.soul) {
       photocard_div.innerHTML = `
-        <h3>${photocard.name}</h3>
+        <h3>${photocard.name.toUpperCase()}</h3>
         <h5>#${photocard.number} | ${photocard.code}</h5>
         <span class="soulholder">
           <img src="${photocard.image_url}" alt="${photocard.name}" class="soul-bg" />
@@ -180,7 +186,7 @@ let add_cards_to_div = (photocards, photocards_div) => {
       `;
     } else if (photocard.event) {
       photocard_div.innerHTML = `
-        <h3>${photocard.name}</h3>
+        <h3>${photocard.name.toUpperCase()}</h3>
         <h5>#${photocard.number} | ${photocard.code}</h5>
         <img src="${photocard.image_url}" alt="${photocard.name}" />
         <h4 class="rarity" style="background-color: ${rarities[photocard.rarity]}">${photocard.rarity} - ${photocard.era}</h4>
@@ -188,7 +194,7 @@ let add_cards_to_div = (photocards, photocards_div) => {
       `;
     } else {
       photocard_div.innerHTML = `
-        <h3>${photocard.name}</h3>
+        <h3>${photocard.name.toUpperCase()}</h3>
         <h5>#${photocard.number} | ${photocard.code}</h5>
         <img src="${photocard.image_url}" alt="${photocard.name}" />
         <h4 class="rarity" style="background-color: ${rarities[photocard.rarity]}">${photocard.rarity}D</h4>
