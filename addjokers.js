@@ -1,4 +1,16 @@
-function newInvCard(name, group, era, code, rarity, traderate) {
+/**
+ * @param {string} name
+ * @param {string} group
+ * @param {string} era
+ * @param {int} number
+ * @param {string} code
+ * @param {int} rarity
+ * @param {int} traderate
+ * @param {boolean} [event=false]
+ * @returns {Object}
+*/
+
+function newInvCard(name, group, era, number, code, rarity, traderate, event=false) {
   const fileName = code.split('.')[0];
   
   let tradeText;
@@ -19,27 +31,30 @@ function newInvCard(name, group, era, code, rarity, traderate) {
       tradeText = "";
   }
 
+  const eraOrEvent = event
+    ? `{C:pink}Event: {}${era}` : `{C:purple}Era: {}${era}`;
+
   return {
     name: name,
+    era: era,
+    number: number,
+    code: code,
     text: [
       `{C:orange}Group: {}${group}`,
-      `{C:purple}Era: {}${era}`,
-      `{C:grey}Code: {}${code}`,
+      eraOrEvent,
       "",
       tradeText
-    ].filter(Boolean),
+    ],
     image_url: `img/${fileName}.gif`,
     rarity: rarity
   };
 }
 
 let inventory = [
-  newInvCard("COCONA", "XG", "New DNA", "XNCN3.b9cd", "💎💎💎", 0),
-  newInvCard("IRENE", "Irene & Seulgi", "Monster", "ISI3.0a0a", "💎💎💎", 1),
-  newInvCard("COCONA", "XG", "Tippy Toes", "XTO1.8c15", "💎", 0),
-  newInvCard("JURIA", "XG", "Tippy Toes", "XTJ1.a998", "💎", 0),
-  newInvCard("HARVEY", "XG", "Tippy Toes", "XTH1.c125", "💎", 0),
-  newInvCard("CHISA", "XG", "Mascara", "XMCH1.9b2b", "💎", 0),
+//newInvCard("NAME", "GROUP", "ERA(EVENT)", "NUMBER", "CODE", "RARITY", TRADERATE, [EVENT]),
+  newInvCard("WOONGMIN", "AB6IX", "Ships", 6, "AWMS.17b7", 2, 1, true),
+  newInvCard("COCONA", "XG", "NEW DNA", 50, "XNCN3.b9cd", 3, 0),
+  newInvCard("IRENE", "Irene & Seulgi", "Monster", 56, "ISI3.0a0a", 3, 1),
 ];
 
 // Deprecated
@@ -51,7 +66,6 @@ let stickers = []
 let blinds = []
 
 let cols = {
-  
   MULT: "#FE5F55",
   CHIPS: "#009dff",
   MONEY: "#f3b958",
@@ -64,6 +78,7 @@ let cols = {
   PALE_GREEN: "#56a887",
   ORANGE: "#fda200",
   IMPORTANT: "#ff9a00",
+  PINK: "#FF8DA1",
   GOLD: "#eac058",
   YELLOW: "#ffff00",
   CLEAR: "#00000000", 
@@ -94,9 +109,9 @@ let cols = {
 }
 
 let rarities = {
-  "💎": "#66c4ff", 
-  "💎💎": "#4BC292",
-  "💎💎💎": "#fe5f55",
+  1: "#66c4ff", 
+  2: "#4BC292",
+  3: "#fe5f55",
   "Legendary": "#b26cbb",
   "Joker": "#708b91",
   "Tarot": "#a782d1",
@@ -145,6 +160,7 @@ let add_cards_to_div = (jokers, jokers_div) => {
     if (joker.rarity === "Sticker" || joker.rarity == "Seal") {
       joker_div.innerHTML = `
         <h3>${joker.name}</h3>
+        <h5>#${joker.number} | ${joker.code}</h5>
         <img src="${joker.image_url}" alt="${joker.name}" class="hasback" />
         <h4 class="rarity" style="background-color: ${rarities[joker.rarity]}">${joker.rarity}</h4>
         <div class="text">${joker.text}</div>
@@ -152,6 +168,7 @@ let add_cards_to_div = (jokers, jokers_div) => {
     } else if (joker.soul) {
       joker_div.innerHTML = `
         <h3>${joker.name}</h3>
+        <h5>#${joker.number} | ${joker.code}</h5>
         <span class="soulholder">
           <img src="${joker.image_url}" alt="${joker.name}" class="soul-bg" />
           <img src="${joker.image_url}" alt="${joker.name}" class="soul-top" />
@@ -159,11 +176,20 @@ let add_cards_to_div = (jokers, jokers_div) => {
         <h4 class="rarity" style="background-color: ${rarities[joker.rarity]}">${joker.rarity}</h4>
         <div class="text">${joker.text}</div>
       `;
+    } else if (joker.event) {
+      joker_div.innerHTML = `
+        <h3>${joker.name}</h3>
+        <h5>#${joker.number} | ${joker.code}</h5>
+        <img src="${joker.image_url}" alt="${joker.name}" />
+        <h4 class="rarity" style="background-color: ${rarities[joker.rarity]}">${joker.rarity} - ${joker.era}</h4>
+        <div class="text">${joker.text}</div>
+      `;
     } else {
       joker_div.innerHTML = `
         <h3>${joker.name}</h3>
+        <h5>#${joker.number} | ${joker.code}</h5>
         <img src="${joker.image_url}" alt="${joker.name}" />
-        <h4 class="rarity" style="background-color: ${rarities[joker.rarity]}">${joker.rarity}</h4>
+        <h4 class="rarity" style="background-color: ${rarities[joker.rarity]}">${joker.rarity}D</h4>
         <div class="text">${joker.text}</div>
       `;
     }
