@@ -57,7 +57,6 @@ let inventory = [
   newInvCard("cocona", "XG", "NEW DNA", 50, "XNCN3.b9cd", 3, 0),
   newInvCard("irene", "Irene & Seulgi", "Monster", 56, "ISI3.0a0a", 3, 1),
   newInvCard("takeru", "INI", "THE VIEW", 90, "ITWK2.2d66", 2, 3),
-  newInvCard("Seongjong", "INFINITE", "13egin", 102, "IEJ1.4288", 1, 3),
   newInvCard("ruka", "BABYMONSTER", "DRIP", 108, "BDRU1.0369", 1, 2),
   newInvCard("Taemin", "SHINEE", "Coquette", 172, "STCT.5615", 2, 2, true),
   newInvCard("Juria", "XG", "SOMETHING AIN'T RIGHT", 180, "XSU2.2da0", 2, 0),
@@ -65,6 +64,10 @@ let inventory = [
   newInvCard("The8", "SEVENTEEN", "Coquette", 274, "SECT.ef52", 2, 1, true),
   newInvCard("Hinata", "XG", "WINTER WITHOUT YOU", 327, "XWHI2.0655", 2, 0),
   newInvCard("Hinata", "XG", "NEW DNA", 329, "XNHI2.fa67", 2, 0),
+  newInvCard("Jurin", "XG", "SHOOTING STAR", 368, "XJR2.a67e", 2, 0),
+  newInvCard("Harvey", "XG", "SHOOTING STAR", 421, "XHV2.cb79", 2, 0),
+  newInvCard("Sinb & Bin", "GF x ASTRO", "Frosty Friends", 447, "SBBF.41ab", 2, 2, true),
+  newInvCard("Daso & Nana", "SIS x OC", "Frosty Friends", 448, "DANF.9d0a", 2, 2, true),
 ];
 
 // Deprecated
@@ -191,7 +194,7 @@ let add_cards_to_div = (photocards, photocards_div) => {
         <h3>${photocard.name.toUpperCase()}</h3>
         <h5>#${photocard.number} | ${photocard.code}</h5>
         <img src="${photocard.image_url}" alt="${photocard.name}" />
-        <h4 class="rarity" style="background-color: ${rarities[photocard.rarity]}">${photocard.rarity} [${photocard.era}]</h4>
+        <h4 class="rarity" style="background-color: ${rarities[photocard.rarity]}">${photocard.rarity} [${photocard.era.slice(0, 3)}.]</h4>
         <div class="text">${photocard.text}</div>
       `;
     } else {
