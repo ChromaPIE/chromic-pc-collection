@@ -60,7 +60,7 @@ h5 {
   gap: 1rem;
   flex-wrap: wrap;
 }
-.joker {
+.photocard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +72,7 @@ h5 {
 
   background-color: #3742446f;
 }
-.joker img {
+.photocard img {
   height: 190px;
 }
 img.hasback {
@@ -83,7 +83,7 @@ img.hasback {
   from {object-position: 0px 0px}
   to {object-position: -2720px 0px}
 }
-.blinds .joker img {
+.blinds .photocard img {
   width: 136px;
   height: 136px;
   object-fit: cover;
