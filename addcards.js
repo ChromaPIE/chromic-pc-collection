@@ -61,7 +61,6 @@ let inventory = [
   newInvCard("Taemin", "SHINEE", "Coquette", 172, "STCT.5615", 2, 2, true),
   newInvCard("Hyungwon", "MONSTA X", "No Limit", 174, "MNY1.f451", 1, 2),
   newInvCard("Juria", "XG", "SOMETHING AIN'T RIGHT", 180, "XSU2.2da0", 2, 0),
-  newInvCard("Asa", "BABYMONSTER", "DRIP", 181, "BDAS1.cae9", 1, 2),
   newInvCard("Hinata", "XG", "SOMETHING AIN'T RIGHT", 210, "XSI2.b236", 2, 0),
   newInvCard("The8", "SEVENTEEN", "Coquette", 274, "SECT.ef52", 2, 1, true),
   newInvCard("Hinata", "XG", "WINTER WITHOUT YOU", 327, "XWHI2.0655", 2, 0),
