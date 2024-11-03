@@ -63,6 +63,8 @@ let inventory = [
   newInvCard("Juria", "XG", "SOMETHING AIN'T RIGHT", 180, "XSU2.2da0", 2, 0),
   newInvCard("Hinata", "XG", "SOMETHING AIN'T RIGHT", 210, "XSI2.b236", 2, 0),
   newInvCard("The8", "SEVENTEEN", "Coquette", 274, "SECT.ef52", 2, 1, true),
+  newInvCard("Hinata", "XG", "WINTER WITHOUT YOU", 327, "XWHI2.0655", 2, 0),
+  newInvCard("Hinata", "XG", "NEW DNA", 329, "XNHI2.fa67", 2, 0),
 ];
 
 // Deprecated
@@ -189,7 +191,7 @@ let add_cards_to_div = (photocards, photocards_div) => {
         <h3>${photocard.name.toUpperCase()}</h3>
         <h5>#${photocard.number} | ${photocard.code}</h5>
         <img src="${photocard.image_url}" alt="${photocard.name}" />
-        <h4 class="rarity" style="background-color: ${rarities[photocard.rarity]}">${photocard.rarity} - ${photocard.era}</h4>
+        <h4 class="rarity" style="background-color: ${rarities[photocard.rarity]}">${photocard.rarity} [${photocard.era}]</h4>
         <div class="text">${photocard.text}</div>
       `;
     } else {
