@@ -54,9 +54,8 @@ function newInvCard(name, group, era, number, code, rarity, traderate, event=fal
 let inventory = [
 //newInvCard("NAME", "GROUP", "ERA(EVENT)", "NUMBER", "CODE", "RARITY", TRADERATE, [EVENT]),
   newInvCard("woongmin", "AB6IX", "Ships", 6, "AWMS.17b7", 2, 3, true),
-  newInvCard("cocona", "XG", "NEW DNA", 50, "XNCN3.b9cd", 3, 0),
+  newInvCard("cocona", "XG", "New DNA", 50, "XNCN3.b9cd", 3, 0),
   newInvCard("irene", "Irene & Seulgi", "Monster", 56, "ISI3.0a0a", 3, 1),
-  newInvCard("Jeonghyeon", "EVNNE", "TARGET: Me", 63, "ETMJ2.7410", 2, 3),
   newInvCard("Cocona", "XG", "WOKE UP", 69, "XUC1.bec0", 1, 0, true),
   newInvCard("takeru", "INI", "THE VIEW", 90, "ITWK2.2d66", 2, 3),
   newInvCard("Harvey", "XG", "SOMETHING AIN'T RIGHT", 96, "XSH1.8b4b", 1, 0, true),
@@ -68,7 +67,7 @@ let inventory = [
   newInvCard("Hinata", "XG", "SOMETHING AIN'T RIGHT", 210, "XSI2.b236", 2, 0),
   newInvCard("The8", "SEVENTEEN", "Coquette", 274, "SECT.ef52", 2, 1, true),
   newInvCard("Hinata", "XG", "WINTER WITHOUT YOU", 327, "XWHI2.0655", 2, 0),
-  newInvCard("Hinata", "XG", "NEW DNA", 329, "XNHI2.fa67", 2, 0),
+  newInvCard("Hinata", "XG", "New DNA", 329, "XNHI2.fa67", 2, 0),
   newInvCard("Jurin", "XG", "SHOOTING STAR", 368, "XJR2.a67e", 2, 0),
   newInvCard("Rora", "BABYMONSTER", "Booster", 391, "BRRB.e193", 2, 3, true),
   newInvCard("Harvey", "XG", "SHOOTING STAR", 421, "XHV2.cb79", 2, 0),
@@ -88,6 +87,16 @@ let inventory = [
   newInvCard("Emma & Som", "BV x KARD", "Frosty Friends", 488, "EOF.273b", 2, 1, true),
   newInvCard("Xiu & Leo", "EXO x VIXX", "Frosty Friends", 500, "XLF.442b", 2, 3, true),
   newInvCard("Chae & Jee", "Kep1 x CIGNA", "Frosty Friends", 504, "NWF.5418", 2, 2, true),
+  newInvCard("Jung & Lip", "WJSN x LOONA", "Frosty Friends", 504, "JLF.c0af", 2, 3, true),
+  newInvCard("Chaeyeon", "IZ*ONE", "Vampire", 603, "IVCH2.fd98", 2, 2),
+  newInvCard("Hinata", "XG", "New DNA", 643, "XNHI2.11f4", 2, 0),
+  newInvCard("Harvey", "XG", "WINTER WITHOUT YOU", 684, "XWH2.974c", 2, 0),
+  newInvCard("Cocona", "XG", "Tippy Toes", 685, "XTO1.8c15", 1, 0),
+  newInvCard("Harvey", "XG", "SHOOTING STAR", 722, "XHV2.0f43", 2, 0),
+  newInvCard("Hinata", "XG", "SHOOTING STAR", 747, "XH2.4653", 2, 0),
+  newInvCard("Jurin", "XG", "Tippy Toes", 750, "XTU1.b459", 1, 0),
+  newInvCard("Chisa", "XG", "New DNA", 797, "XNC2.71e5", 2, 0),
+  newInvCard("Suga", "BTS", "The Most Beautiful Moment in Life Pt.2", 821, "BTSS2.1b09", 2, 1),
 ];
 
 // Deprecated
