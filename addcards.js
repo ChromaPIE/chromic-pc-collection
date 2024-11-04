@@ -56,9 +56,9 @@ let inventory = [
   newInvCard("woongmin", "AB6IX", "Ships", 6, "AWMS.17b7", 2, 3, true),
   newInvCard("cocona", "XG", "New DNA", 50, "XNCN3.b9cd", 3, 0),
   newInvCard("irene", "Irene & Seulgi", "Monster", 56, "ISI3.0a0a", 3, 1),
-  newInvCard("Cocona", "XG", "WOKE UP", 69, "XUC1.bec0", 1, 0, true),
+  newInvCard("Cocona", "XG", "WOKE UP", 69, "XUC1.bec0", 1, 0),
   newInvCard("takeru", "INI", "THE VIEW", 90, "ITWK2.2d66", 2, 3),
-  newInvCard("Harvey", "XG", "SOMETHING AIN'T RIGHT", 96, "XSH1.8b4b", 1, 0, true),
+  newInvCard("Harvey", "XG", "SOMETHING AIN'T RIGHT", 96, "XSH1.8b4b", 1, 0),
   newInvCard("ruka", "BABYMONSTER", "DRIP", 108, "BDRU1.0369", 1, 2),
   newInvCard("Maya", "XG", "WOKE UP", 141, "XUM2.ecba", 2, 0),
   newInvCard("Taemin", "SHINEE", "Coquette", 172, "STCT.5615", 2, 2, true),
@@ -96,7 +96,8 @@ let inventory = [
   newInvCard("Hinata", "XG", "SHOOTING STAR", 747, "XH2.4653", 2, 0),
   newInvCard("Jurin", "XG", "Tippy Toes", 750, "XTU1.b459", 1, 0),
   newInvCard("Chisa", "XG", "New DNA", 797, "XNC2.71e5", 2, 0),
-  newInvCard("Suga", "BTS", "The Most Beautiful Moment in Life Pt.2", 821, "BTSS2.1b09", 2, 1),
+  newInvCard("Suga", "BTS", "The Most Beautiful Moment in Life Pt.2", 821, "BTSS2.1b09", 2, 2),
+  newInvCard("Dayoung", "WJSN", "As You Wish", 943, "WAG1.09ed", 1, 2),
 ];
 
 // Deprecated
