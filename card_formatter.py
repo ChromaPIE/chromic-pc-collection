@@ -3,7 +3,7 @@ import os
 
 def format_card_info(input_str):
     # 匹配时期（era）或活动（event）名称
-    pattern = r'^(\w+(?:\s*&\s*\w+)?)\s+de\s+([\w\s*]+(?:\s*x\s*[\w\s*]+)?)\s+(era|evento)\s+([\w\s\'.]+)\s+✨(\d+)\s+-\s+([\w\d.]+)$'
+    pattern = r'^([\w\s]+(?:\s*&\s*[\w\s]+)?)\s+de\s+([\w\s.*]+(?:\s*x\s*[\w\s.*]+)?)\s+(era|evento)\s+([\w\s\'.?]+)\s+✨(\d+)\s+-\s+([\w\d.]+)$'
     match = re.match(pattern, input_str)
     
     if match:

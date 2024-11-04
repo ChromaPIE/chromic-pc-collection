@@ -41,7 +41,7 @@ function newInvCard(name, group, era, number, code, rarity, traderate, event=fal
     code: code,
     event: event,
     text: [
-      `{C:orange}Group: {}${group}`,
+      `${group === "Solista" ? "Solo" : `{C:orange}Group: {}${group}`}`,
       eraOrEvent,
       "",
       tradeText
@@ -87,6 +87,7 @@ let inventory = [
   newInvCard("Xiu & Leo", "EXO x VIXX", "Frosty Friends", 500, "XLF.442b", 2, 3, true),
   newInvCard("Chae & Jee", "Kep1 x CIGNA", "Frosty Friends", 504, "NWF.5418", 2, 2, true),
   newInvCard("Jung & Lip", "WJSN x LOONA", "Frosty Friends", 504, "JLF.c0af", 2, 3, true),
+  newInvCard("BX & Ayden", "Cix x EPEX", "Frosty Friends", 524, "BAF.c0d5", 2, 3, true),
   newInvCard("Chaeyeon", "IZ*ONE", "Vampire", 603, "IVCH2.fd98", 2, 2),
   newInvCard("Hinata", "XG", "New DNA", 643, "XNHI2.11f4", 2, 0),
   newInvCard("Harvey", "XG", "WINTER WITHOUT YOU", 684, "XWH2.974c", 2, 0),
@@ -98,6 +99,13 @@ let inventory = [
   newInvCard("Chisa", "XG", "New DNA", 797, "XNC2.71e5", 2, 0),
   newInvCard("Suga", "BTS", "The Most Beautiful Moment in Life Pt.2", 821, "BTSS2.1b09", 2, 2),
   newInvCard("Dayoung", "WJSN", "As You Wish", 943, "WAG1.09ed", 1, 2),
+  newInvCard("Serim", "CRAVITY", "New Wave", 947, "CNS2.5608", 2, 2),
+  newInvCard("Lee Hi", "Solista", "Only", 951, "SOLHO2.7bea", 2, 2),
+  newInvCard("Chaeeun", "ADYA", "ADYA", 961, "AC2.e966", 2, 2),
+  newInvCard("Q", "THE BOYZ", "BREAKING DOWN", 1004, "TBBQ2.2723", 2, 2),
+  newInvCard("Ningning", "aespa", "Whiplash", 1006, "AWN1.fc0b", 1, 2),
+  newInvCard("Chungha", "I.O.I", "miss me?", 1026, "IMU1.db73", 1, 2),
+  newInvCard("Hinata", "XG", "New Dna", 1039, "XNHI2.a406", 2, 0),
 ];
 
 // Deprecated
