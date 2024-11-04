@@ -54,6 +54,7 @@ function newInvCard(name, group, era, number, code, rarity, traderate, event=fal
 let inventory = [
 //newInvCard("NAME", "GROUP", "ERA(EVENT)", "NUMBER", "CODE", "RARITY", TRADERATE, [EVENT]),
   newInvCard("woongmin", "AB6IX", "Ships", 6, "AWMS.17b7", 2, 3, true),
+  newInvCard("HyoSeung", "OH MY GIRL", "Ships", 39, "OHSS.4c67", 2, 2, true),
   newInvCard("cocona", "XG", "New DNA", 50, "XNCN3.b9cd", 3, 0),
   newInvCard("irene", "Irene & Seulgi", "Monster", 56, "ISI3.0a0a", 3, 1),
   newInvCard("Cocona", "XG", "WOKE UP", 69, "XUC1.bec0", 1, 0),
