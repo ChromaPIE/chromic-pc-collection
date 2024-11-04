@@ -46,7 +46,7 @@ function newInvCard(name, group, era, number, code, rarity, traderate, event=fal
       "",
       tradeText
     ],
-    image_url: `img/${fileName}.gif`,
+    image_url: `img/${fileName}.webp`,
     rarity: rarity
   };
 }
@@ -56,8 +56,10 @@ let inventory = [
   newInvCard("woongmin", "AB6IX", "Ships", 6, "AWMS.17b7", 2, 3, true),
   newInvCard("cocona", "XG", "NEW DNA", 50, "XNCN3.b9cd", 3, 0),
   newInvCard("irene", "Irene & Seulgi", "Monster", 56, "ISI3.0a0a", 3, 1),
+  newInvCard("Jeonghyeon", "EVNNE", "TARGET: Me", 63, "ETMJ2.7410", 2, 3),
   newInvCard("takeru", "INI", "THE VIEW", 90, "ITWK2.2d66", 2, 3),
   newInvCard("ruka", "BABYMONSTER", "DRIP", 108, "BDRU1.0369", 1, 2),
+  newInvCard("Maya", "XG", "WOKE UP", 141, "XUM2.ecba", 2, 0),
   newInvCard("Taemin", "SHINEE", "Coquette", 172, "STCT.5615", 2, 2, true),
   newInvCard("Hyungwon", "MONSTA X", "No Limit", 174, "MNY1.f451", 1, 2),
   newInvCard("Juria", "XG", "SOMETHING AIN'T RIGHT", 180, "XSU2.2da0", 2, 0),
@@ -66,19 +68,24 @@ let inventory = [
   newInvCard("Hinata", "XG", "WINTER WITHOUT YOU", 327, "XWHI2.0655", 2, 0),
   newInvCard("Hinata", "XG", "NEW DNA", 329, "XNHI2.fa67", 2, 0),
   newInvCard("Jurin", "XG", "SHOOTING STAR", 368, "XJR2.a67e", 2, 0),
+  newInvCard("Rora", "BABYMONSTER", "Booster", 391, "BRRB.e193", 2, 3, true),
   newInvCard("Harvey", "XG", "SHOOTING STAR", 421, "XHV2.cb79", 2, 0),
   newInvCard("Sinb & Bin", "GF x ASTRO", "Frosty Friends", 447, "SBBF.41ab", 2, 2, true),
   newInvCard("Yuri & Chuu", "Solo x Solo", "Frosty Friends", 448, "YCF.2870", 2, 3, true),
   newInvCard("Daso & Nana", "SIS x OC", "Frosty Friends", 448, "DANF.9d0a", 2, 2, true),
   newInvCard("Harvey", "XG", "WOKE UP", 456, "XUA2.1580", 2, 0),
-  newInvCard("You & Byul", "SIS x MMMOO", "Frosty Friends", 458, "YBF.023d", 2, 2, true),
   newInvCard("San & Dae", "ASTRO x AB6IX", "Frosty Friends", 458, "SDF.5041", 2, 3, true),
+  newInvCard("You & Byul", "SIS x MMMOO", "Frosty Friends", 458, "YBF.023d", 2, 2, true),
   newInvCard("Yena & Min", "IZ* X Speed", "Frosty Friends", 460, "EMF.5ecd", 2, 3, true),
   newInvCard("Jihan & Seeun", "Wkly x STAYC", "Frosty Friends", 465, "JSF.1b8e", 2, 3, true),
   newInvCard("Juria", "XG", "Tippy Toes", 465, "XTJ1.ed78", 1, 0),
   newInvCard("Hiyyih & J", "Kep1 x STAYC", "Frosty Friends", 466, "IJF.a171", 2, 1, true),
   newInvCard("Nay & Jenn", "TW x BP", "Frosty Friends", 467, "NJF.4ac6", 2, 1, true),
   newInvCard("Harvey", "XG", "Tippy Toes", 479, "XTH2.3627", 2, 0),
+  newInvCard("Eun & Sae", "IZ* x from9", "Frosty Friends", 479, "ESF.1d71", 2, 2, true),
+  newInvCard("Emma & Som", "BV x KARD", "Frosty Friends", 488, "EOF.273b", 2, 1, true),
+  newInvCard("Xiu & Leo", "EXO x VIXX", "Frosty Friends", 500, "XLF.442b", 2, 3, true),
+  newInvCard("Chae & Jee", "Kep1 x CIGNA", "Frosty Friends", 504, "NWF.5418", 2, 2, true),
 ];
 
 // Deprecated
