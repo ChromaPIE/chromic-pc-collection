@@ -65,14 +65,14 @@ def add_to_js_file(new_card):
                         print(f"Warning: Could not parse number for card: {card}")
         
         # 构建新inventory
-        new_inventory_content = inventory_content.split('\n')
         # 寻找索引
+        new_inventory_content = inventory_content.strip().split('\n')
         first_card_index = next((i for i, line in enumerate(new_inventory_content) if 'newInvCard' in line), 0)
-        new_inventory_content.insert(first_card_index + insert_index, '  ' + new_card)
+        new_inventory_content.insert(first_card_index + insert_index, '  ' + new_card.strip())
         new_inventory_content = '\n'.join(new_inventory_content)
         
         # 替换原文件内容
-        new_content = re.sub(inventory_pattern, f'let inventory = [\n{new_inventory_content}\n];', content)
+        new_content = re.sub(inventory_pattern, f'let inventory = [\n{new_inventory_content}\n];', content).strip()
         
         with open(js_file, 'w', encoding='utf-8') as file:
             file.write(new_content)
