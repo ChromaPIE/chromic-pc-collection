@@ -98,6 +98,8 @@ let inventory = [
   newInvCard("JR & Tae", "NU'EST x NCT", "Frosty Friends", 528, "JTF.bba0", 2, 2, true),
   newInvCard("Jeonghan", "SEVENTEEN", "17 IS RIGHT HERE", 528, "SIE2.7511", 2, 2),
   newInvCard("Zoa & Woo", "Wkly x wh", "Frosty Friends", 528, "ZOF.ffe4", 2, 2, true),
+  newInvCard("Dae & Jin", "AB6IX x Cix", "Frosty Friends", 543, "DIF.ec43", 2, 3, true),
+  newInvCard("Chuu & Nana", "Solo x WH", "Frosty Friends", 543, "CNF.7418", 2, 3, true),
   newInvCard("Hinata", "XG", "SOMETHING AIN'T RIGHT", 580, "XSI1.4734", 1, 0),
   newInvCard("Yoohyeon", "Dreamcatcher", "VillainS", 588, "DVO2.f585", 2, 2),
   newInvCard("Chaeyeon", "IZ*ONE", "Vampire", 603, "IVCH2.fd98", 2, 2),
@@ -109,6 +111,7 @@ let inventory = [
   newInvCard("Hinata", "XG", "SHOOTING STAR", 747, "XH2.4653", 2, 0),
   newInvCard("Jurin", "XG", "Tippy Toes", 750, "XTU1.b459", 1, 0),
   newInvCard("Allen", "CRAVITY", "The Awakening: Written In The Stars", 789, "CAA2.5462", 2, 2),
+  newInvCard("Hinata", "XG", "SOMETHING AIN'T RIGHT", 790, "XSI1.a4aa", 1, 0),
   newInvCard("Chisa", "XG", "New DNA", 797, "XNC2.71e5", 2, 0),
   newInvCard("Suga", "BTS", "The Most Beautiful Moment in Life Pt.2", 821, "BTSS2.1b09", 2, 2),
   newInvCard("Chisa", "XG", "SHOOTING STAR", 834, "XC2.460c", 2, 0),
@@ -120,6 +123,11 @@ let inventory = [
   newInvCard("Ningning", "aespa", "Whiplash", 1006, "AWN1.fc0b", 1, 2),
   newInvCard("Chungha", "I.O.I", "miss me?", 1026, "IMU1.db73", 1, 2),
   newInvCard("Hinata", "XG", "New Dna", 1039, "XNHI2.a406", 2, 0),
+  newInvCard("Jaehyuk", "TREASURE", "Second Step", 1064, "TSJK2.a004", 2, 3),
+  newInvCard("Minjun", "NINE.i", "NEW MIND", 1095, "NNMM1.cee9", 1, 3),
+  newInvCard("Natty", "KISS OF LIFE", "Kiss Of Life", 1115, "KNY2.3c1c", 2, 1),
+  newInvCard("Yuju", "Cherry Bullet", "Love Adventure", 1122, "CLAY1.ad38", 1, 2),
+  newInvCard("Hinata", "XG", "WINTER WITHOUT YOU", 1277, "XWHI1.25e2", 1, 0),
 ];
 
 // Deprecated
